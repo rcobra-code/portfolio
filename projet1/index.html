@@ -1,88 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rayan Rochdi – Portfolio Web</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Raleway', sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      font-weight: 400;
-    }
-    .btn {
-      margin-top: 2rem;
-      background: white;
-      color: #764ba2;
-      padding: 1rem 2rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 2rem;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #f0f0f0;
-    }
-    .section {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 2rem;
-      margin-top: 2rem;
-      max-width: 800px;
-      backdrop-filter: blur(4px);
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "✔ ";
-      color: #00ffd9;
-    }
-    @media (max-width: 600px) {
-      h1 { font-size: 2.2rem; }
-      h2 { font-size: 1.2rem; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirandigital - Agence Web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="hero">
+    <div class="container">
+      <h1>Mirandigital</h1>
+      <p>Agence de marketing numérique pour PME ambitieuses</p>
+      <a href="#services" class="cta">Découvrir nos services</a>
+    </div>
+  </header>
 
-  <h1>Rayan Rochdi</h1>
-  <h2>Développeur Web & Webmaster indépendant</h2>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Nous accompagnons les entreprises dans leur croissance en ligne avec des stratégies digitales efficaces et mesurables.</p>
+    </div>
+  </section>
 
-  <div class="section">
-    <p>Bienvenue sur mon portfolio. Voici une version professionnelle de mon site personnel, que j’utilise pour présenter mes compétences à mes clients ou partenaires.</p>
-    <h3 style="margin-top: 1.5rem;">Ce que je propose :</h3>
-    <ul style="margin-top: 1rem;">
-      <li>Création de sites vitrines modernes et performants</li>
-      <li>Sites personnalisés avec HTML, CSS, JS ou WordPress</li>
-      <li>Design responsive (adapté mobile/tablette)</li>
-      <li>Conseils SEO et identité visuelle</li>
-    </ul>
-    <a href="../index.html" class="btn">← Retour au portfolio</a>
-  </div>
+  <section id="services" class="section alt">
+    <div class="container">
+      <h2>Nos services</h2>
+      <ul class="services">
+        <li>
+          <h3>Création de site web</h3>
+          <p>Sites vitrines, e-commerce, portfolios personnalisés.</p>
+        </li>
+        <li>
+          <h3>Référencement (SEO)</h3>
+          <p>Optimisation pour Google & moteurs de recherche.</p>
+        </li>
+        <li>
+          <h3>Publicité digitale</h3>
+          <p>Campagnes Meta, Google Ads, email marketing.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Besoin d’un devis ? Parlons-en !</p>
+      <a href="mailto:contact@mirandigital.co" class="cta">Envoyez-nous un message</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Mirandigital. Tous droits réservés.</p>
+    </div>
+  </footer>
 </body>
 </html>
