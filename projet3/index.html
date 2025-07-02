@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperApp – Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+    header {
+      background: #5a68df;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .btn {
+      margin-top: 3rem;
+      padding: 1rem 2rem;
+      background: #5a68df;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #4a58c4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SuperApp</h1>
+    <p>Une landing page moderne, responsive, et dynamique pour présenter un produit tech ou une startup.</p>
+  </header>
+  <section>
+    <h2>Fonctionnalités</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Design Moderne</h3>
+        <p>Interface propre et animations subtiles pour valoriser le produit.</p>
+      </div>
+      <div class="feature">
+        <h3>Responsive</h3>
+        <p>Optimisé pour tous les écrans : desktop, tablette, mobile.</p>
+      </div>
+      <div class="feature">
+        <h3>Simple à adapter</h3>
+        <p>Peut servir pour une startup, une app, un service, etc.</p>
+      </div>
+    </div>
+    <a href="../index.html" class="btn">← Retour au Portfolio</a>
+  </section>
+</body>
+</html>
