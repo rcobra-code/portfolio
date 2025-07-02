@@ -3,45 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio Créatif – Rayan Rochdi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+  <title>Rayan Rochdi – Portfolio Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Raleway', sans-serif;
-      background: linear-gradient(120deg, #ff6b6b, #f06595);
+      background: linear-gradient(135deg, #667eea, #764ba2);
       color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 2rem;
     }
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 3rem;
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
     }
     .btn {
+      margin-top: 2rem;
       background: white;
-      color: #f06595;
+      color: #764ba2;
       padding: 1rem 2rem;
-      font-size: 1rem;
       font-weight: bold;
-      border: none;
+      text-decoration: none;
       border-radius: 2rem;
-      cursor: pointer;
-      transition: transform 0.2s;
+      transition: background 0.3s;
     }
     .btn:hover {
-      transform: scale(1.05);
+      background: #f0f0f0;
+    }
+    .section {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 2rem;
+      max-width: 800px;
+      backdrop-filter: blur(4px);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "✔ ";
+      color: #00ffd9;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
-  <h1>Portfolio Créatif</h1>
-  <p>Ce site présente un design minimaliste, responsive, avec une touche artistique moderne. Il peut servir de base à une identité personnelle pour développeur ou designer.</p>
-  <a href="../index.html"><button class="btn">← Retour au Portfolio</button></a>
+
+  <h1>Rayan Rochdi</h1>
+  <h2>Développeur Web & Webmaster indépendant</h2>
+
+  <div class="section">
+    <p>Bienvenue sur mon portfolio. Voici une version professionnelle de mon site personnel, que j’utilise pour présenter mes compétences à mes clients ou partenaires.</p>
+    <h3 style="margin-top: 1.5rem;">Ce que je propose :</h3>
+    <ul style="margin-top: 1rem;">
+      <li>Création de sites vitrines modernes et performants</li>
+      <li>Sites personnalisés avec HTML, CSS, JS ou WordPress</li>
+      <li>Design responsive (adapté mobile/tablette)</li>
+      <li>Conseils SEO et identité visuelle</li>
+    </ul>
+    <a href="../index.html" class="btn">← Retour au portfolio</a>
+  </div>
+
 </body>
 </html>
